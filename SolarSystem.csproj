@@ -55,7 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="ConvertOrbit.cs" />
+    <Compile Include="SolarSystemClass.cs" />
+    <Compile Include="SolarSystemObject.cs" />
+    <Page Include="SolarSystemWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -63,8 +66,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="SolarSystemWindow.xaml.cs">
+      <DependentUpon>SolarSystemWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -93,6 +96,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\mercury.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\venus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\earth.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\mars.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\jupiter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\saturn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\uranus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\neptune.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Planet\pluto.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
